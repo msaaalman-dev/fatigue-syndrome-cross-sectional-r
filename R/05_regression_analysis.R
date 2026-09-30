@@ -15,7 +15,7 @@ load("Fatigue_Cleaned.RData")
 # ============================================================
 
 # The original workflow combined the 25-29 and 40+ categories into
-# a broader 25+ category. Verify these labels against your dataset.
+# a broader 25+ category.
 data <- data %>%
   mutate(
     age_combined = case_when(
@@ -105,42 +105,3 @@ write_csv(
   ),
   "results/statistical_results/reduced_model_vif.csv"
 )
-
-# ============================================================
-# Earlier full model from the original analysis
-# ============================================================
-# Retained here for transparency. It was not silently deleted.
-# Do not treat it as the final model unless the study analysis confirms
-# that this was the intended final specification.
-
-model_full <- lm(
-  cfq_total ~
-    age +
-    gender +
-    year +
-    income +
-    bmi +
-    phq_total +
-    gad_total +
-    sleep_hours +
-    exercise_freq +
-    chronic +
-    medication,
-  data = data
-)
-
-summary(model_full)
-
-vif_full <- vif(model_full)
-vif_full
-
-confint(model_full)
-
-model_parameters(
-  model_full,
-  standardize = "refit"
-)
-
-summary(model_full)$r.squared
-summary(model_full)$adj.r.squared
-nobs(model_full)
