@@ -148,5 +148,5 @@ lapply(data %>% select(where(is.factor)), janitor::tabyl)
 
 save(data, file = "Fatigue_Cleaned.RData")
 
-# Participant-level output: keep local; do not upload publicly.
+# Local output
 write_xlsx(data, "Fatigue_Cleaned.xlsx")
