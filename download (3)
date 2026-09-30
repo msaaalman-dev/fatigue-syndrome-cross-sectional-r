@@ -1,0 +1,25 @@
+# R / RStudio
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+
+# Participant-level / sensitive data
+data/*.xlsx
+data/*.csv
+data/*.sav
+data/*.dta
+data/*.rds
+data/*.RData
+
+# Local participant-level outputs
+Fatigue_Cleaned.xlsx
+Fatigue_Cleaned.RData
+Fatigue_Analysis_Dataset.xlsx
+
+# Generated outputs
+results/tables/*.docx
+
+# OS files
+.DS_Store
+Thumbs.db
