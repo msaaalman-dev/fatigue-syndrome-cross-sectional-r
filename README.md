@@ -3,9 +3,6 @@
 A reproducible public-health research portfolio project analyzing fatigue
 and its associations with psychological and anthropometric measures.
 
-> **Status:** Portfolio-ready analysis workflow. Participant-level data are
-> intentionally excluded.
-
 ## Research question
 
 This project examines fatigue measured using the **Chalder Fatigue
@@ -103,16 +100,9 @@ direction.
 
 ## Data availability
 
-The original participant-level Excel dataset is not included in this public
-repository.
-
 The local source file was named:
 
 `Fatigure_Cleaned.xlsx`
-
-Public release of participant-level data should only occur if explicitly
-authorized by the relevant study team and permitted by applicable ethical,
-privacy, and data-governance requirements.
 
 ## Reproducibility
 
@@ -138,7 +128,7 @@ through `.gitignore`.
 
 ## Author
 
-**Muhammad Salman**  
+**Muhammad Salman Khalid**  
 BS (Hons.) Public Health
 
 This repository is part of a public-health research and data-analysis
