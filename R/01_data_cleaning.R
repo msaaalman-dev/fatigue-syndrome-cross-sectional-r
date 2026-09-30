@@ -7,10 +7,6 @@
 # Import the local study dataset, clean variable names, rename variables,
 # convert categorical variables to factors, calculate BMI, and perform
 # basic data-quality checks.
-#
-# IMPORTANT:
-# The participant-level Excel file is intentionally NOT committed to GitHub.
-# Keep it locally at: data/Fatigure_Cleaned.xlsx
 
 library(tidyverse)
 library(readxl)
@@ -125,6 +121,4 @@ summary(data$bmi)
 colSums(is.na(data))
 
 # ---- Save locally ----
-# The output contains participant-level data and must NOT be committed
-# to a public GitHub repository.
 save(data, file = "Fatigue_Cleaned.RData")
