@@ -3,9 +3,6 @@
 A reproducible public-health research portfolio project analyzing fatigue
 and its associations with psychological and anthropometric measures.
 
-> **Status:** Portfolio-ready analysis workflow. Participant-level data are
-> intentionally excluded.
-
 ## Research question
 
 This project examines fatigue measured using the **Chalder Fatigue
@@ -57,11 +54,8 @@ fatigue-syndrome-cross-sectional-r/
 │   ├── 05_regression_analysis.R
 │   └── 06_visualizations.R
 ├── data/
+│   └── Fatigure_Cleaned.xlsx
 │   └── README.md
-├── figures/
-├── results/
-│   ├── tables/
-│   └── statistical_results/
 └── docs/
     ├── analysis_plan.md
     ├── data_dictionary.md
@@ -92,27 +86,11 @@ The reduced model includes:
 - GAD-7 score
 - sleep duration
 
-Before reporting a final manuscript result, the intended final model should
-be confirmed against the study's analysis plan.
-
 ## Important interpretation note
 
 This is a **cross-sectional** analysis. Associations identified in the
 analysis should not be interpreted as proof of causation or temporal
 direction.
-
-## Data availability
-
-The original participant-level Excel dataset is not included in this public
-repository.
-
-The local source file was named:
-
-`Fatigure_Cleaned.xlsx`
-
-Public release of participant-level data should only occur if explicitly
-authorized by the relevant study team and permitted by applicable ethical,
-privacy, and data-governance requirements.
 
 ## Reproducibility
 
@@ -133,12 +111,9 @@ The first script expects the authorized local dataset at:
 data/Fatigure_Cleaned.xlsx
 ```
 
-Participant-level `.RData`, `.xlsx`, `.csv`, and similar files are excluded
-through `.gitignore`.
-
 ## Author
 
-**Muhammad Salman**  
+**Muhammad Salman Khalid**  
 BS (Hons.) Public Health
 
 This repository is part of a public-health research and data-analysis
