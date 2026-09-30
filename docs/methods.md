@@ -13,7 +13,3 @@ The original analysis included data cleaning, questionnaire scoring,
 Cronbach's alpha, descriptive statistics, normality assessment, group
 comparisons, Spearman correlations, multiple linear regression, and
 visualization.
-
-The public repository excludes participant-level data. Numerical results
-should be generated from the authorized local dataset rather than manually
-copied into the repository.
