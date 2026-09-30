@@ -4,20 +4,11 @@
 .RData
 .Ruserdata
 
-# Participant-level / sensitive data
-data/*.xlsx
-data/*.csv
-data/*.sav
-data/*.dta
-data/*.rds
-data/*.RData
+# Raw/Sensitive data (Ignore uncleaned data - add actual raw file name if applicable)
+# data/raw_data.xlsx
+# data/raw_data.csv
 
-# Local participant-level outputs
-Fatigue_Cleaned.xlsx
-Fatigue_Cleaned.RData
-Fatigue_Analysis_Dataset.xlsx
-
-# Generated outputs
+# Generated outputs (Ignores auto-generated Word tables)
 results/tables/*.docx
 
 # OS files
