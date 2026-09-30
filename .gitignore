@@ -4,10 +4,6 @@
 .RData
 .Ruserdata
 
-# Raw/Sensitive data (Ignore uncleaned data - add actual raw file name if applicable)
-# data/raw_data.xlsx
-# data/raw_data.csv
-
 # Generated outputs (Ignores auto-generated Word tables)
 results/tables/*.docx
 
